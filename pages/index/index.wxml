@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<navigation-bar title="图片混淆" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <form>
+    <view class="options" style="margin: 10rpx;">
+        <button type="warn" style="margin-right: 5rpx;"  bind:tap="chooseImage">选择图片</button>
+        <button type="warn" bind:tap="sendImage">发送图片</button>
+    </view>
+    <view class="options">
+        <view class="row" style="flex-direction: row;">
+            <view>混淆图片</view>
+            <switch type="checkbox" bindchange="operateChange"></switch>
+        </view>
+        <view class="row" style="flex-direction: row;">
+            <view>图片加解密密码</view>
+            <input class='input' type="number" bindinput="keyInput" placeholder="number only" />
+        </view>
+        
+    </view>
+    <view class="row" style="border: 0cm;">
+        <view><text>选择图片</text></view>
+        <image class="imageview" id="encrypt" src="{{imageSrc}}" mode="scaleToFill" style="width: 90%;height: 200;"></image>
+        <view><text>处理完成</text></view>
+        <image class="imageview" src="{{imageDeal}}" bind:tap="saveImageToLocal" mode="scaleToFill" style="width: 90%;height: 200;"/>
+    </view>
+    </form>
+  </view>
+  
+</scroll-view>

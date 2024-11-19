@@ -1,0 +1,63 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.container{
+    padding: 0%;
+    margin:10rpx;
+    /* width: 100%; */
+    /* border: 2rpx solid red; */
+}
+.imageview{
+    border: solid black 2rpx;
+    
+}
+.scrollarea {
+  flex: 1;
+  /* padding: 0%;
+  margin: 0%; */
+  /* border:solid green 2rpx; */
+  overflow-y: hidden;
+  padding-bottom: 10rpx;
+}
+.row{
+    padding: 0;
+    width: 100%;
+    margin: 10rpx;
+    justify-content:center;
+    border: 2rpx solid yellow;
+}
+
+button{
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.button-sp-area{
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+}
+.button-area{
+    width: 60%;
+    height: auto;
+}
+.mini-btn{
+    margin-right: 10rpx;
+}
+.options{
+    padding: 0;
+    margin: 0;
+    /* border: violet solid 2rpx; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.input{
+    border: 1rpx solid lightblue;
+    /* margin: 10rpx; */
+    text-align: center;
+
+}
